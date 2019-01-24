@@ -12,7 +12,7 @@
   brew update
   brew doctor
   
-  # Install helper
+  # Helper
   
   brew install vitorgalvao/tiny-scripts/cask-repair
   brew install mas
@@ -20,8 +20,11 @@
   brew install telnet
   brew install aria2
   brew install wget
+  brew install jq
+  brew install blueutil
+  brew install duti
   
-  # Install Applications
+  # Applications
   
   mas_install=(
     '466261145'
@@ -99,4 +102,40 @@
     brew cask install ${cask_install[$i]}
   done
   
-  # Linking binaries
+  # Binaries Linking
+  
+  ln -s "/Users/admin/GitHub/aky-source/aky.sh" "/usr/local/bin/aky" && chmod +x "/usr/local/bin/aky"
+  ln -s "/Users/admin/GitHub/aky-source/rg.sh" "/usr/local/bin/rg" && chmod +x "/usr/local/bin/rg"
+  ln -s "/Users/admin/GitHub/aky-source/csc.sh" "/usr/local/bin/csc" && chmod +x "/usr/local/bin/csc"
+  
+  ln -s "/Users/admin/GitHub/helper/bin/gmcfa" "/usr/local/bin/gmcfa" && chmod +x "/usr/local/bin/gmcfa"
+  ln -s "/Users/admin/GitHub/helper/bin/aky-updatecheck" "/usr/local/bin/aky-updatecheck" && chmod +x "/usr/local/bin/aky-updatecheck"
+  ln -s "/Users/admin/GitHub/helper/bin/AppStoreXtractor" "/usr/local/bin/AppStoreXtractor" && chmod +x "/usr/local/bin/AppStoreXtractor"
+  ln -s "/Users/admin/GitHub/helper/bin/assimilateownership" "/usr/local/bin/assimilateownership" && chmod +x "/usr/local/bin/assimilateownership"
+  ln -s "/Users/admin/GitHub/helper/bin/currentuser" "/usr/local/bin/currentuser" && chmod +x "/usr/local/bin/currentuser"
+  ln -s "/Users/admin/GitHub/helper/bin/lohelper" "/usr/local/bin/lohelper" && chmod +x "/usr/local/bin/lohelper"
+  ln -s "/Users/admin/GitHub/helper/bin/pkgfixer" "/usr/local/bin/pkgfixer" && chmod +x "/usr/local/bin/pkgfixer"
+  ln -s "/Users/admin/GitHub/helper/bin/randomizer" "/usr/local/bin/randomizer" && chmod +x "/usr/local/bin/randomizer"
+  ln -s "/Users/admin/GitHub/helper/bin/tmpDir" "/usr/local/bin/tmpDir" && chmod +x "/usr/local/bin/tmpDir"
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
