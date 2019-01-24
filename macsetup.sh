@@ -117,25 +117,3 @@
   ln -s "/Users/admin/GitHub/helper/bin/pkgfixer" "/usr/local/bin/pkgfixer" && chmod +x "/usr/local/bin/pkgfixer"
   ln -s "/Users/admin/GitHub/helper/bin/randomizer" "/usr/local/bin/randomizer" && chmod +x "/usr/local/bin/randomizer"
   ln -s "/Users/admin/GitHub/helper/bin/tmpDir" "/usr/local/bin/tmpDir" && chmod +x "/usr/local/bin/tmpDir"
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
