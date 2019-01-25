@@ -38,6 +38,7 @@
   cask_install=(
     'alfred'
     'autodmg'
+    'appcleaner'
     'caffeine'
     'charles'
     'chocolat'
@@ -59,6 +60,7 @@
     'ipsecuritas'
     'iterm2'
     'jamf-migrator'
+    'jdownloader'
     'keka'
     'kerio-connect'
     'knockknock'
