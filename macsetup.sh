@@ -3,16 +3,20 @@
   # Homebrew
   
   if ! which brew > /dev/null; then
-    ruby -e \
-      "$(curl -Ls 'https://github.com/Homebrew/install/raw/master/install')" \
-        < /dev/null > /dev/null 2>&1
+    ruby -e "$(curl -Ls 'https://github.com/Homebrew/install/raw/master/install')" < /dev/null > /dev/null 2>&1
   fi
   
   brew analytics off
   brew update
   brew doctor
   
-  # Helper
+  brew tap caskroom/cask
+  brew tap caskroom/fonts
+  brew tap caskroom/versions
+  brew tap homebrew/command-not-found
+  brew tap homebrew/services
+  
+  # Homebrew
   
   brew install vitorgalvao/tiny-scripts/cask-repair
   brew install mas
@@ -29,6 +33,10 @@
   mas_install=(
     '466261145'
     '443987910'
+    '409201541'
+    '409907375'
+    '1037126344'
+    '497799835'
   )
   
   for ((i = 0; i < "${#mas_install[@]}"; i++)); do
@@ -111,6 +119,7 @@
   ln -s "/Users/admin/GitHub/aky-source/csc.sh" "/usr/local/bin/csc" && chmod +x "/usr/local/bin/csc"
   
   ln -s "/Users/admin/GitHub/helper/bin/gmcfa" "/usr/local/bin/gmcfa" && chmod +x "/usr/local/bin/gmcfa"
+  ln -s "/Users/admin/GitHub/helper/bin/aky-updatecheck" "/usr/local/bin/appcast-checkpoint" && chmod +x "/usr/local/bin/appcast-checkpoint"
   ln -s "/Users/admin/GitHub/helper/bin/aky-updatecheck" "/usr/local/bin/aky-updatecheck" && chmod +x "/usr/local/bin/aky-updatecheck"
   ln -s "/Users/admin/GitHub/helper/bin/AppStoreXtractor" "/usr/local/bin/AppStoreXtractor" && chmod +x "/usr/local/bin/AppStoreXtractor"
   ln -s "/Users/admin/GitHub/helper/bin/assimilateownership" "/usr/local/bin/assimilateownership" && chmod +x "/usr/local/bin/assimilateownership"
