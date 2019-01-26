@@ -119,3 +119,28 @@
   ln -s "/Users/admin/GitHub/helper/bin/pkgfixer" "/usr/local/bin/pkgfixer" && chmod +x "/usr/local/bin/pkgfixer"
   ln -s "/Users/admin/GitHub/helper/bin/randomizer" "/usr/local/bin/randomizer" && chmod +x "/usr/local/bin/randomizer"
   ln -s "/Users/admin/GitHub/helper/bin/tmpDir" "/usr/local/bin/tmpDir" && chmod +x "/usr/local/bin/tmpDir"
+  
+  # Customize
+  
+  # git
+  
+  git config --global core.excludesfile ~/.gitignore
+  echo ".DS_Store" >> ~/.gitignore
+  
+  # Finder
+  
+  defaults write com.apple.finder "_FXShowPosixPathInTitle" true
+  defaults write com.apple.finder "NewWindowTarget" PfHm
+  defaults write com.apple.finder "ShowHardDrivesOnDesktop" true
+  defaults write com.apple.finder "ShowExternalHardDrivesOnDesktop" true
+  defaults write com.apple.finder "ShowMountedServersOnDesktop" true
+  defaults write com.apple.finder "ShowStatusBar" true
+  defaults write com.apple.finder "ShowPathbar" true
+  defaults write com.apple.finder "SidebarDevicesSectionDisclosedState" true
+  defaults write com.apple.finder "SidebarPlacesSectionDisclosedState" true
+  defaults write com.apple.finder "SidebarSharedSectionDisclosedState" true
+  defaults write com.apple.finder "ShowRecentTags" false
+  defaults write com.apple.finder "ShowPreviewPane" false
+  defaults write com.apple.finder "FXPreferredSearchViewStyle" clmv
+  defaults write com.apple.finder "FXPreferredViewStyle" clmv
+  defaults write com.apple.finder "SearchRecentsSavedViewStyle" clmv
