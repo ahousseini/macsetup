@@ -111,7 +111,7 @@
   )
   
   for ((i = 0; i < "${#cask_install[@]}"; i++)); do
-    brew cask install ${cask_install[$i]}
+    brew cask install --no-quarantine ${cask_install[$i]}
   done
   
   # Binaries Linking
