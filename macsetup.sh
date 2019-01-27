@@ -148,18 +148,69 @@
   
   # Finder
   
-  defaults write com.apple.finder "_FXShowPosixPathInTitle" true
-  defaults write com.apple.finder "NewWindowTarget" PfHm
-  defaults write com.apple.finder "ShowHardDrivesOnDesktop" true
-  defaults write com.apple.finder "ShowExternalHardDrivesOnDesktop" true
-  defaults write com.apple.finder "ShowMountedServersOnDesktop" true
-  defaults write com.apple.finder "ShowStatusBar" true
-  defaults write com.apple.finder "ShowPathbar" true
-  defaults write com.apple.finder "SidebarDevicesSectionDisclosedState" true
-  defaults write com.apple.finder "SidebarPlacesSectionDisclosedState" true
-  defaults write com.apple.finder "SidebarSharedSectionDisclosedState" true
-  defaults write com.apple.finder "ShowRecentTags" false
-  defaults write com.apple.finder "ShowPreviewPane" false
-  defaults write com.apple.finder "FXPreferredSearchViewStyle" clmv
-  defaults write com.apple.finder "FXPreferredViewStyle" clmv
-  defaults write com.apple.finder "SearchRecentsSavedViewStyle" clmv
+  defaults write com.apple.finder "_FXShowPosixPathInTitle" -bool true
+  defaults write com.apple.finder "NewWindowTarget" -string PfHm
+  defaults write com.apple.finder "ShowHardDrivesOnDesktop" -bool true
+  defaults write com.apple.finder "ShowExternalHardDrivesOnDesktop" -bool true
+  defaults write com.apple.finder "ShowMountedServersOnDesktop" -bool true
+  defaults write com.apple.finder "ShowStatusBar" -bool true
+  defaults write com.apple.finder "ShowPathbar" -bool true
+  defaults write com.apple.finder "SidebarDevicesSectionDisclosedState" -bool true
+  defaults write com.apple.finder "SidebarPlacesSectionDisclosedState" -bool true
+  defaults write com.apple.finder "SidebarSharedSectionDisclosedState" -bool true
+  defaults write com.apple.finder "ShowRecentTags" -bool false
+  defaults write com.apple.finder "ShowPreviewPane" -bool false
+  defaults write com.apple.finder "FXPreferredSearchViewStyle" -string clmv
+  defaults write com.apple.finder "FXPreferredViewStyle" -string clmv
+  defaults write com.apple.finder "SearchRecentsSavedViewStyle" -string clmv
+  
+  # Dock
+  
+  defaults write com.apple.dock orientation -string left
+  defaults write com.apple.dock show-recents -bool false
+  
+  dockutil --remove "all"
+  
+  dock_items=(
+    '/Applications/Self Service Icon Maker.app'
+    '/Applications/Microsoft Excel.app'
+    '/Applications/Microsoft Word.app'
+    '/Applications/Calendar.app'
+    '/Applications/Utilities/Terminal.app'
+    '/Applications/Pacifist.app'
+    '/Applications/Suspicious Package.app'
+    '/Applications/Packages.app'
+    '/Applications/Platypus.app'
+    '/Applications/Remotix.app'
+    '/Applications/GitHub Desktop.app'
+    '/Applications/jamf-migrator.app'
+    '/Applications/The MUT.app'
+    '/Applications/Chocolat.app'
+    '/Applications/Sublime Text.app'
+    '/Applications/Preview.app'
+    '/Applications/1Password.app'
+    '/Applications/Transmit.app'
+    '/Applications/Viscosity.app'
+    '/Applications/Mail.app'
+    '/Applications/HipChat.app'
+    '/Applications/HelpDesk.app'
+    '/Applications/mite.app'
+    '/Applications/Notion.app'
+    '/Applications/Flow.app'
+    '/Applications/Slack.app'
+    '/Applications/Messages.app'
+    '/Applications/Signal.app'
+    '/Applications/WhatsApp.app'
+    '/Applications/Spotify.app'
+    '/Applications/Tor Browser.app'
+    '/Applications/Google Chrome.app'
+    '/Applications/Firefox.app'
+    '/Applications/Safari.app'
+    '/Applications/System Preferences.app'
+  )
+  
+  for ((i = 0; i < "${#dock_items[@]}"; i++)); do
+    dockutil --add "${dock_items[$i]}" --no-restart
+  done
+  
+  osascript -e 'tell app "Dock" to quit'
