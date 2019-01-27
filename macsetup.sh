@@ -19,15 +19,22 @@
   
   # Homebrew
   
-  brew install vitorgalvao/tiny-scripts/cask-repair
-  brew install mas
-  brew install dockutil
-  brew install telnet
-  brew install aria2
-  brew install wget
-  brew install jq
-  brew install blueutil
-  brew install duti
+  formulae_install=(
+    'vitorgalvao/tiny-scripts/cask-repair'
+    'mas'
+    'dockutil'
+    'telnet'
+    'aria2'
+    'wget'
+    'jq'
+    'blueutil'
+    'duti'
+    'ncdu'
+  )
+  
+  for ((i = 0; i < "${#formulae_install[@]}"; i++)); do
+    brew install ${formulae_install[$i]}
+  done
   
   # Applications
   
