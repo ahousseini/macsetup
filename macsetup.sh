@@ -56,6 +56,7 @@
     'alfred'
     'autodmg'
     'appcleaner'
+    'blockblock'
     'caffeine'
     'charles'
     'chocolat'
