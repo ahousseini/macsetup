@@ -52,6 +52,7 @@
   done
   
   cask_install=(
+    'anydesk'
     'alfred'
     'autodmg'
     'appcleaner'
