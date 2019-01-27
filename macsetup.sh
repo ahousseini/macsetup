@@ -90,6 +90,7 @@
     'spectacle'
     'spotify'
     'sublime-text'
+    'sus-inspector'
     'suspicious-package'
     'the-mut'
     'tor-browser'
