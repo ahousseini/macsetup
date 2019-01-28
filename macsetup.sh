@@ -30,6 +30,7 @@
     'blueutil'
     'duti'
     'ncdu'
+    'xmlstarlet'
   )
   
   for ((i = 0; i < "${#formulae_install[@]}"; i++)); do
@@ -138,6 +139,7 @@
   chmod +x "/Users/admin/GitHub/helper/bin/pkgfixer" && ln -s "/Users/admin/GitHub/helper/bin/pkgfixer" "/usr/local/bin/pkgfixer"
   chmod +x "/Users/admin/GitHub/helper/bin/randomizer" && ln -s "/Users/admin/GitHub/helper/bin/randomizer" "/usr/local/bin/randomizer"
   chmod +x "/Users/admin/GitHub/helper/bin/tmpDir" && ln -s "/Users/admin/GitHub/helper/bin/tmpDir" "/usr/local/bin/tmpDir"
+  chmod +x "/Users/admin/GitHub/helper/bin/jamff" && ln -s "/Users/admin/GitHub/helper/bin/jamff" "/usr/local/bin/jamff"
   
   # git
   
@@ -212,3 +214,14 @@
   done
   
   osascript -e 'tell app "Dock" to quit'
+  
+  # Finder Sidebar
+  
+  sidebar_items=(
+    '/Users/admin/WebOffice'
+    '/Users/admin/GitHub'
+  )
+  
+  for ((i = 0; i < "${#sidebar_items[@]}"; i++)); do
+    /usr/bin/sfltool add-item com.apple.LSSharedFileList.FavoriteItems file://${sidebar_items[$i]}
+  done
