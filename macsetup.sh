@@ -181,6 +181,7 @@
     '/Applications/Suspicious Package.app'
     '/Applications/Packages.app'
     '/Applications/Platypus.app'
+    '/Applications/Debookee.app'
     '/Applications/Remotix.app'
     '/Applications/GitHub Desktop.app'
     '/Applications/jamf-migrator.app'
