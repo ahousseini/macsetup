@@ -125,20 +125,20 @@
   
   # Binaries Linking
   
-  chmod +x "/usr/local/bin/aky" && ln -s "/Users/admin/GitHub/aky-source/aky.sh" "/usr/local/bin/aky"
-  chmod +x "/usr/local/bin/aky" && ln -s "/Users/admin/GitHub/aky-source/rg.sh" "/usr/local/bin/rg"
-  chmod +x "/usr/local/bin/aky" && ln -s "/Users/admin/GitHub/aky-source/csc.sh" "/usr/local/bin/csc"
+  chmod +x "/Users/admin/GitHub/aky-source/aky.sh" && ln -s "/Users/admin/GitHub/aky-source/aky.sh" "/usr/local/bin/aky"
+  chmod +x "/Users/admin/GitHub/aky-source/rg.sh" && ln -s "/Users/admin/GitHub/aky-source/rg.sh" "/usr/local/bin/rg"
+  chmod +x "/Users/admin/GitHub/aky-source/csc.sh" && ln -s "/Users/admin/GitHub/aky-source/csc.sh" "/usr/local/bin/csc"
   
-  chmod +x "/usr/local/bin/aky" && ln -s "/Users/admin/GitHub/helper/bin/gmcfa" "/usr/local/bin/gmcfa"
-  chmod +x "/usr/local/bin/aky" && ln -s "/Users/admin/GitHub/helper/bin/aky-updatecheck" "/usr/local/bin/appcast-checkpoint"
-  chmod +x "/usr/local/bin/aky" && ln -s "/Users/admin/GitHub/helper/bin/aky-updatecheck" "/usr/local/bin/aky-updatecheck"
-  chmod +x "/usr/local/bin/aky" && ln -s "/Users/admin/GitHub/helper/bin/AppStoreXtractor" "/usr/local/bin/AppStoreXtractor"
-  chmod +x "/usr/local/bin/aky" && ln -s "/Users/admin/GitHub/helper/bin/assimilateownership" "/usr/local/bin/assimilateownership"
-  chmod +x "/usr/local/bin/aky" && ln -s "/Users/admin/GitHub/helper/bin/currentuser" "/usr/local/bin/currentuser"
-  chmod +x "/usr/local/bin/aky" && ln -s "/Users/admin/GitHub/helper/bin/lohelper" "/usr/local/bin/lohelper"
-  chmod +x "/usr/local/bin/aky" && ln -s "/Users/admin/GitHub/helper/bin/pkgfixer" "/usr/local/bin/pkgfixer"
-  chmod +x "/usr/local/bin/aky" && ln -s "/Users/admin/GitHub/helper/bin/randomizer" "/usr/local/bin/randomizer"
-  chmod +x "/usr/local/bin/aky" && ln -s "/Users/admin/GitHub/helper/bin/tmpDir" "/usr/local/bin/tmpDir"
+  chmod +x "/Users/admin/GitHub/helper/bin/gmcfa" && ln -s "/Users/admin/GitHub/helper/bin/gmcfa" "/usr/local/bin/gmcfa"
+  chmod +x "/Users/admin/GitHub/helper/bin/aky-updatecheck" && ln -s "/Users/admin/GitHub/helper/bin/aky-updatecheck" "/usr/local/bin/appcast-checkpoint"
+  chmod +x "/Users/admin/GitHub/helper/bin/aky-updatecheck" && ln -s "/Users/admin/GitHub/helper/bin/aky-updatecheck" "/usr/local/bin/aky-updatecheck"
+  chmod +x "/Users/admin/GitHub/helper/bin/AppStoreXtractor" && ln -s "/Users/admin/GitHub/helper/bin/AppStoreXtractor" "/usr/local/bin/AppStoreXtractor"
+  chmod +x "/Users/admin/GitHub/helper/bin/assimilateownership" && ln -s "/Users/admin/GitHub/helper/bin/assimilateownership" "/usr/local/bin/assimilateownership"
+  chmod +x "/Users/admin/GitHub/helper/bin/currentuser" && ln -s "/Users/admin/GitHub/helper/bin/currentuser" "/usr/local/bin/currentuser"
+  chmod +x "/Users/admin/GitHub/helper/bin/lohelper" && ln -s "/Users/admin/GitHub/helper/bin/lohelper" "/usr/local/bin/lohelper"
+  chmod +x "/Users/admin/GitHub/helper/bin/pkgfixer" && ln -s "/Users/admin/GitHub/helper/bin/pkgfixer" "/usr/local/bin/pkgfixer"
+  chmod +x "/Users/admin/GitHub/helper/bin/randomizer" && ln -s "/Users/admin/GitHub/helper/bin/randomizer" "/usr/local/bin/randomizer"
+  chmod +x "/Users/admin/GitHub/helper/bin/tmpDir" && ln -s "/Users/admin/GitHub/helper/bin/tmpDir" "/usr/local/bin/tmpDir"
   
   # git
   
