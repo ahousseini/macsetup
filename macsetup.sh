@@ -128,7 +128,6 @@
   chmod +x "/Users/admin/GitHub/aky-source/aky.sh" && ln -s "/Users/admin/GitHub/aky-source/aky.sh" "/usr/local/bin/aky"
   chmod +x "/Users/admin/GitHub/aky-source/rg.sh" && ln -s "/Users/admin/GitHub/aky-source/rg.sh" "/usr/local/bin/rg"
   chmod +x "/Users/admin/GitHub/aky-source/csc.sh" && ln -s "/Users/admin/GitHub/aky-source/csc.sh" "/usr/local/bin/csc"
-  
   chmod +x "/Users/admin/GitHub/helper/bin/gmcfa" && ln -s "/Users/admin/GitHub/helper/bin/gmcfa" "/usr/local/bin/gmcfa"
   chmod +x "/Users/admin/GitHub/helper/bin/aky-updatecheck" && ln -s "/Users/admin/GitHub/helper/bin/aky-updatecheck" "/usr/local/bin/appcast-checkpoint"
   chmod +x "/Users/admin/GitHub/helper/bin/aky-updatecheck" && ln -s "/Users/admin/GitHub/helper/bin/aky-updatecheck" "/usr/local/bin/aky-updatecheck"
