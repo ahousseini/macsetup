@@ -40,12 +40,13 @@
   # Applications
   
   mas_install=(
-    '466261145' # Remotix VNC, RDP & NEAR
-    '443987910' # 1Password 6
-    '409201541' # Pages
-    '409907375' # Apple Remote Desktop
+    '466261145'  # Remotix VNC, RDP & NEAR
+    '443987910'  # 1Password 6
+    '409201541'  # Pages
+    '409907375'  # Apple Remote Desktop
     '1037126344' # Apple Configurator 2
-    '497799835' # Xcode
+    '497799835'  # Xcode
+    '689859502'  # Push Diagnostics
   )
   
   for ((i = 0; i < "${#mas_install[@]}"; i++)); do
