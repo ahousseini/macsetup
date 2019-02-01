@@ -47,6 +47,7 @@
     '1037126344' # Apple Configurator 2
     '497799835'  # Xcode
     '689859502'  # Push Diagnostics
+    '897243628'  # IPv4 Subnet
   )
   
   for ((i = 0; i < "${#mas_install[@]}"; i++)); do
