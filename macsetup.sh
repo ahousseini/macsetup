@@ -189,6 +189,7 @@
     '/Applications/jamf-migrator.app'
     '/Applications/The MUT.app'
     '/Applications/Chocolat.app'
+    '/Applications/Coda 2.app'
     '/Applications/Sublime Text.app'
     '/Applications/Preview.app'
     '/Applications/1Password.app'
