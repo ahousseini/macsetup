@@ -219,6 +219,10 @@
   
   osascript -e 'tell app "Dock" to quit'
   
+  # Enable CUPS web interface
+  
+  cupsctl WebInterface=yes
+  
   # Finder Sidebar
   
   sidebar_items=(
