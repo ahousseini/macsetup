@@ -168,6 +168,8 @@
   defaults write com.apple.finder "FXPreferredViewStyle" -string clmv
   defaults write com.apple.finder "SearchRecentsSavedViewStyle" -string clmv
   
+  osascript -e 'tell app "Finder" to quit'
+  
   # Dock
   
   defaults write com.apple.dock orientation -string left
