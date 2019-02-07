@@ -62,6 +62,7 @@
     'appcleaner'
     'blockblock'
     'caffeine'
+    'carbon-copy-cloner'
     'charles'
     'chocolat'
     'clipy'
