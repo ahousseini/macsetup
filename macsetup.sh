@@ -31,7 +31,6 @@
     'duti'
     'ncdu'
     'xmlstarlet'
-    'telnet'
   )
   
   for ((i = 0; i < "${#formulae_install[@]}"; i++)); do
