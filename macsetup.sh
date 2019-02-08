@@ -133,7 +133,7 @@
   chmod +x "/Users/admin/GitHub/aky-source/rg/rg.sh" && ln -s "/Users/admin/GitHub/aky-source/rg/rg.sh" "/usr/local/bin/rg"
   chmod +x "/Users/admin/GitHub/aky-source/csc/csc.sh" && ln -s "/Users/admin/GitHub/aky-source/csc/csc.sh" "/usr/local/bin/csc"
   chmod +x "/Users/admin/GitHub/helper/bin/gmcfa" && ln -s "/Users/admin/GitHub/helper/bin/gmcfa" "/usr/local/bin/gmcfa"
-  chmod +x "/Users/admin/GitHub/helper/bin/aky-updatecheck" && ln -s "/Users/admin/GitHub/helper/bin/aky-updatecheck" "/usr/local/bin/appcast-checkpoint"
+  chmod +x "/Users/admin/GitHub/helper/bin/appcast-checkpoint" && ln -s "/Users/admin/GitHub/helper/bin/appcast-checkpoint" "/usr/local/bin/appcast-checkpoint"
   chmod +x "/Users/admin/GitHub/helper/bin/aky-updatecheck" && ln -s "/Users/admin/GitHub/helper/bin/aky-updatecheck" "/usr/local/bin/aky-updatecheck"
   chmod +x "/Users/admin/GitHub/helper/bin/AppStoreXtractor" && ln -s "/Users/admin/GitHub/helper/bin/AppStoreXtractor" "/usr/local/bin/AppStoreXtractor"
   chmod +x "/Users/admin/GitHub/helper/bin/assimilateownership" && ln -s "/Users/admin/GitHub/helper/bin/assimilateownership" "/usr/local/bin/assimilateownership"
