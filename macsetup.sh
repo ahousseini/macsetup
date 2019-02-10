@@ -127,6 +127,38 @@
     brew cask install --no-quarantine ${cask_install[$i]}
   done
   
+  # Install autopkg and add basic repos
+  
+  autopkg_version="1.0.4"
+  
+  cd "/private/tmp/" && curl -s -O -J -L "https://github.com/autopkg/autopkg/releases/download/v${autopkg_version}/autopkg-${autopkg_version}.pkg"
+  
+  /usr/sbin/installer -pkg "/private/tmp/autopkg-${autopkg_version}.pkg" -target / > /dev/null 2>&1 && rm -rf "/private/tmp/autopkg-${autopkg_version}.pkg"
+  
+  autopkg_repo=(
+    'dataJAR-recipes'
+    'prochat-recipes'
+  )
+  
+  for ((i = 0; i < "${#autopkg_repo[@]}"; i++)); do
+    autopkg repo-add ${autopkg_repo[$i]}
+  done
+  
+  # offset
+  
+  echo "==> Install 'offset'"
+  
+  offsetVersion="1.4.1"
+  
+  tmpFolder=$(getconf DARWIN_USER_CACHE_DIR) && randString=$(/usr/bin/openssl rand -hex 5) && tmpDir="${tmpFolder}${randString}" && /bin/mkdir -p "${tmpDir}"
+  
+  cd "${tmpDir}" && /usr/bin/curl -s -O -J -L "https://github.com/aysiu/offset/releases/download/${offsetVersion}/Offset.pkg"
+  
+  /usr/sbin/installer -pkg "${tmpDir}/Offset.pkg" -target / > /dev/null 2>&1 && rm -rf "${tmpDir}"
+  
+  
+  
+  
   # Binaries Linking
   
   chmod +x "/Users/admin/GitHub/aky-source/aky.sh" && ln -s "/Users/admin/GitHub/aky-source/aky.sh" "/usr/local/bin/aky"
