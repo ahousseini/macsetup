@@ -31,6 +31,7 @@
     'duti'
     'ncdu'
     'xmlstarlet'
+    'shc'
   )
   
   for ((i = 0; i < "${#formulae_install[@]}"; i++)); do
