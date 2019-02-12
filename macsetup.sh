@@ -160,6 +160,7 @@
   chmod +x "/Users/admin/GitHub/helper/bin/randomizer" && ln -s "/Users/admin/GitHub/helper/bin/randomizer" "/usr/local/bin/randomizer"
   chmod +x "/Users/admin/GitHub/helper/bin/tmpDir" && ln -s "/Users/admin/GitHub/helper/bin/tmpDir" "/usr/local/bin/tmpDir"
   chmod +x "/Users/admin/GitHub/helper/bin/jamff" && ln -s "/Users/admin/GitHub/helper/bin/jamff" "/usr/local/bin/jamff"
+  chmod +x "/Users/admin/GitHub/helper/bin/write-out-curl" && ln -s "/Users/admin/GitHub/helper/bin/write-out-curl" "/usr/local/bin/write-out-curl"
   
   # git
   
