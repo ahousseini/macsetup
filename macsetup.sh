@@ -16,6 +16,7 @@
   brew tap homebrew/command-not-found
   brew tap homebrew/services
   brew tap homebrew/cask-eid
+  brew tap jamf/tap
   
   # Homebrew
   
@@ -32,6 +33,7 @@
     'ncdu'
     'xmlstarlet'
     'shc'
+    'kubectl'
   )
   
   for ((i = 0; i < "${#formulae_install[@]}"; i++)); do
@@ -86,6 +88,7 @@
     'keka'
     'kerio-connect'
     'knockknock'
+    'kubernetic'
     'lingon-x'
     'mactracker'
     'microsoft-office'
@@ -206,6 +209,8 @@
     'Platypus.app'
     'Debookee.app'
     'Remotix.app'
+    'Remote Desktop.app'
+    'Kubernetic.app'
     'GitHub Desktop.app'
     'jamf-migrator.app'
     'The MUT.app'
