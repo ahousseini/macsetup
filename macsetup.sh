@@ -34,6 +34,7 @@
     'xmlstarlet'
     'shc'
     'kubectl'
+    'trash'
   )
   
   for ((i = 0; i < "${#formulae_install[@]}"; i++)); do
