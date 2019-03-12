@@ -58,6 +58,8 @@
     mas install ${mas_install[$i]}
   done
   
+  sudo xcodebuild -license accept
+  
   cask_install=(
     'anydesk'
     'alfred'
@@ -136,11 +138,12 @@
   
   cd "/private/tmp/" && curl -s -O -J -L "https://github.com/autopkg/autopkg/releases/download/v${autopkg_version}/autopkg-${autopkg_version}.pkg"
   
-  /usr/sbin/installer -pkg "/private/tmp/autopkg-${autopkg_version}.pkg" -target / > /dev/null 2>&1 && rm -rf "/private/tmp/autopkg-${autopkg_version}.pkg"
+  /usr/sbin/installer -pkg "/private/tmp/autopkg-${autopkg_version}.pkg" -target /
+  rm -rf "/private/tmp/autopkg-${autopkg_version}.pkg"
   
   autopkg_repo=(
-    'dataJAR-recipes'
-    'prochat-recipes'
+    "dataJAR-recipes"
+    "prochat-recipes"
   )
   
   for ((i = 0; i < "${#autopkg_repo[@]}"; i++)); do
@@ -257,3 +260,8 @@
   for ((i = 0; i < "${#sidebar_items[@]}"; i++)); do
     /usr/bin/sfltool add-item com.apple.LSSharedFileList.FavoriteItems file://${sidebar_items[$i]}
   done
+  
+  # Set UTI default handler
+  
+  duti -s "com.chocolatapp.Chocolat" sh all
+  
