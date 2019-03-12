@@ -16,6 +16,7 @@
   brew tap homebrew/command-not-found
   brew tap homebrew/services
   brew tap homebrew/cask-eid
+  brew tap homebrew/cask-versions
   brew tap jamf/tap
   
   # Homebrew
