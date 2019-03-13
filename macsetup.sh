@@ -12,7 +12,6 @@
   
   brew tap caskroom/cask
   brew tap caskroom/fonts
-  brew tap caskroom/versions
   brew tap homebrew/command-not-found
   brew tap homebrew/services
   brew tap homebrew/cask-eid
