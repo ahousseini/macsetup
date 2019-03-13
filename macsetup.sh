@@ -140,7 +140,7 @@
   
   cd "/private/tmp/" && curl -s -O -J -L "https://github.com/autopkg/autopkg/releases/download/v${autopkg_version}/autopkg-${autopkg_version}.pkg"
   
-  /usr/sbin/installer -pkg "/private/tmp/autopkg-${autopkg_version}.pkg" -target /
+  sudo installer -pkg "/private/tmp/autopkg-${autopkg_version}.pkg" -target /
   rm -rf "/private/tmp/autopkg-${autopkg_version}.pkg"
   
   autopkg_repo=(
