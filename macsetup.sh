@@ -202,6 +202,8 @@
   
   dockutil --remove "all"
   
+  sleep 5
+  
   dock_items=(
     'Self Service Icon Maker.app'
     'Microsoft Excel.app'
