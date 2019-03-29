@@ -18,6 +18,7 @@
   brew tap homebrew/cask-fonts
   brew tap homebrew/cask-drivers
   brew tap jamf/tap
+  brew tap timsutton/formulae
 
   # Homebrew
 
@@ -36,6 +37,7 @@
     'shc'
     'kubectl'
     'trash'
+    'brew-pkg'
   )
 
   for ((i = 0; i < "${#formulae_install[@]}"; i++)); do
