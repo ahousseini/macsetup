@@ -220,6 +220,7 @@
     'jamf-migrator.app'
     'The MUT.app'
     'Chocolat.app'
+    'BBEdit.app'
     'Coda 2.app'
     'Sublime Text.app'
     'Preview.app'
