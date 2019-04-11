@@ -68,6 +68,7 @@
     'autodmg'
     'bbedit'
     'appcleaner'
+    'balenaetcher'
     'blockblock'
     'caffeine'
     'carbon-copy-cloner'
