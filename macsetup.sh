@@ -37,6 +37,8 @@
     'kubectl'
     'trash'
     'brew-pkg'
+    'moreutils'
+    'macosvpn'
   )
 
   for ((i = 0; i < "${#formulae_install[@]}"; i++)); do
