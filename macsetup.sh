@@ -39,6 +39,8 @@
     'brew-pkg'
     'moreutils'
     'macosvpn'
+    'shellcheck'
+    'shfmt'
   )
 
   for ((i = 0; i < "${#formulae_install[@]}"; i++)); do
