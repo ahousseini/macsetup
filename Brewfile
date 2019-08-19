@@ -142,3 +142,4 @@ mas "Apple Configurator 2", id: 1037126344
 mas "Xcode", id: 497799835
 mas "Push Diagnostics", id: 689859502
 mas "IPv4 Subnet", id: 897243628
+mas "StopTheMadness", id: 1376402589
