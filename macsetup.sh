@@ -37,6 +37,7 @@ chmod +x "/Users/$(scutil <<< "show State:/Users/ConsoleUser" | awk '/Name :/ &&
 chmod +x "/Users/$(scutil <<< "show State:/Users/ConsoleUser" | awk '/Name :/ && ! /loginwindow/ { print $3 }')/GitHub/helper/bin/tmpDir" && ln -s "/Users/$(scutil <<< "show State:/Users/ConsoleUser" | awk '/Name :/ && ! /loginwindow/ { print $3 }')/GitHub/helper/bin/tmpDir" "/usr/local/bin/tmpDir"
 chmod +x "/Users/$(scutil <<< "show State:/Users/ConsoleUser" | awk '/Name :/ && ! /loginwindow/ { print $3 }')/GitHub/helper/bin/write-out-curl" && ln -s "/Users/$(scutil <<< "show State:/Users/ConsoleUser" | awk '/Name :/ && ! /loginwindow/ { print $3 }')/GitHub/helper/bin/write-out-curl" "/usr/local/bin/write-out-curl"
 chmod +x "/Users/$(scutil <<< "show State:/Users/ConsoleUser" | awk '/Name :/ && ! /loginwindow/ { print $3 }')/GitHub/helper/bin/appstorelookup" && ln -s "/Users/$(scutil <<< "show State:/Users/ConsoleUser" | awk '/Name :/ && ! /loginwindow/ { print $3 }')/GitHub/helper/bin/appstorelookup" "/usr/local/bin/appstorelookup"
+chmod +x "/Users/$(scutil <<< "show State:/Users/ConsoleUser" | awk '/Name :/ && ! /loginwindow/ { print $3 }')/GitHub/james/bin/james" && ln -s "/Users/$(scutil <<< "show State:/Users/ConsoleUser" | awk '/Name :/ && ! /loginwindow/ { print $3 }')/GitHub/james/bin/james" "/usr/local/bin/james"
 
 # Configure gitignore
 
