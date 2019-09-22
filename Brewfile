@@ -62,6 +62,7 @@ brew "wget"
 brew "xmlstarlet"
 brew "xz"
 
+cask "1password"
 cask "alfred"
 cask "anydesk"
 cask "appcleaner"
@@ -136,7 +137,6 @@ cask "wifi-explorer"
 cask "xquartz"
 
 mas "Remotix VNC, RDP & NEAR", id: 466261145
-mas "1Password 6", id: 443987910
 mas "Pages", id: 409201541
 mas "Apple Remote Desktop", id: 409907375
 mas "Apple Configurator 2", id: 1037126344
